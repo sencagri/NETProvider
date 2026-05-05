@@ -1,0 +1,29 @@
+<Project Sdk="Microsoft.NET.Sdk">
+	<PropertyGroup>
+		<TargetFrameworks>net8.0;net9.0;net10.0</TargetFrameworks>
+		<AssemblyName>FirebirdSql.Data.DomainTypeMapping</AssemblyName>
+		<RootNamespace>FirebirdSql.Data.DomainTypeMapping</RootNamespace>
+		<GenerateAssemblyInfo>true</GenerateAssemblyInfo>
+		<GeneratePackageOnBuild>true</GeneratePackageOnBuild>
+	</PropertyGroup>
+	<PropertyGroup>
+		<Version>$(ProviderVersion)</Version>
+		<AssemblyTitle>FirebirdSql.Data.DomainTypeMapping</AssemblyTitle>
+		<Copyright>(c) 2025-$(CopyrightEndYear)</Copyright>
+	</PropertyGroup>
+	<PropertyGroup>
+		<PackageId>FirebirdSql.Data.DomainTypeMapping</PackageId>
+		<Title>Firebird domain-based CLR type mapping (boolean / guid)</Title>
+		<PackageDescription>Wraps FirebirdSql.Data.FirebirdClient connections so columns whose Firebird domain name matches a configured pattern are reported as Boolean or Guid to ADO.NET (mirrors IBProvider's user_type_boolean / user_type_guid behaviour).</PackageDescription>
+		<PackageTags>firebird firebirdclient adonet domain boolean guid ibprovider migration</PackageTags>
+		<PackageReadmeFile>README.md</PackageReadmeFile>
+	</PropertyGroup>
+	<ItemGroup>
+		<None Include="README.md" Pack="true" PackagePath="" />
+		<None Include="..\..\license.txt" Pack="true" PackagePath="" />
+		<None Include="..\..\firebird-logo.png" Pack="true" PackagePath="" />
+	</ItemGroup>
+	<ItemGroup>
+		<ProjectReference Include="..\FirebirdSql.Data.FirebirdClient\FirebirdSql.Data.FirebirdClient.csproj" />
+	</ItemGroup>
+</Project>

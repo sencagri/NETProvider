@@ -9,6 +9,7 @@
     <Project Path="FirebirdSql.EntityFrameworkCore.Firebird/FirebirdSql.EntityFrameworkCore.Firebird.csproj" />
   </Folder>
   <Folder Name="/Provider/">
+    <Project Path="FirebirdSql.Data.DomainTypeMapping/FirebirdSql.Data.DomainTypeMapping.csproj" />
     <Project Path="FirebirdSql.Data.External/FirebirdSql.Data.External.shproj" />
     <Project Path="FirebirdSql.Data.FirebirdClient.Tests/FirebirdSql.Data.FirebirdClient.Tests.csproj" />
     <Project Path="FirebirdSql.Data.FirebirdClient/FirebirdSql.Data.FirebirdClient.csproj" />
